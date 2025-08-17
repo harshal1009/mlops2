@@ -3,11 +3,11 @@ import numpy as np
 from sklearn.preprocessing import MinMaxScaler
 import matplotlib.pyplot as plt
 
-# Generate synthetic data
+
 data = np.random.randint(0, 255, (10, 5))
 print("Original Data:\n", data)
 
-# Scale data between 0 and 1
+
 scaler = MinMaxScaler()
 scaled_data = scaler.fit_transform(data)
 print("Scaled Data:\n", scaled_data)
@@ -25,11 +25,10 @@ Scaled Data:
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Generate synthetic data 
 data_group1 = np.random.normal(loc=50, scale=10, size=500)   # Group 1
 data_group2 = np.random.normal(loc=200, scale=15, size=500)  # Group 2
 
-# Plot histogram for both groups
+
 plt.hist(data_group1, label='Group 1', color='blue')
 plt.hist(data_group2, label='Group 2', color='green')
 plt.title("Data Distribution")
